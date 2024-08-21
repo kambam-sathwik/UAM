@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Manager Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: #fff;
+            padding: 10px 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        }
+
+        .navbar .brand {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .navbar .links {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .navbar .links li {
+            margin-left: 15px;
+            margin-bottom: 10px;
+        }
+
+        .navbar .links a {
+            text-decoration: none;
+            color: #9b59b6;
+            font-weight: 500;
+            padding: 10px;
+            display: block;
+        }
+
+        .navbar .links a:hover {
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #fff;
+            padding: 25px 30px;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+            margin: 20px auto;
+        }
+
+        .container .title {
+            font-size: 25px;
+            font-weight: 500;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .container .title::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 30px;
+            border-radius: 5px;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        }
+
+        .content {
+            margin: 20px 0;
+        }
+        button {
+          padding: 5px 10px;
+          border: none;
+          color: #fff;
+          font-size: 14px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          background: linear-gradient(135deg, #71b7e6, #9b59b6);
+          border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+    	<div class="brand">
+        
+        </div>
+        <ul class="links">
+            <li><a href="http://localhost:8118/project/webapi/myresource/show_team">Show Team</a></li>
+            <li><a href="http://localhost:8118/project/webapi/myresource/get_team_click">Get Member</a></li>
+            <li><a href="http://localhost:8118/project/webapi/myresource/mrequest_admin_click">Request for Admin</a></li>
+            <li><a href="http://localhost:8118/project/webapi/myresource/mcheck_resources">Check Resources</a></li>
+            <li><a href="http://localhost:8118/project/webapi/myresource/mrequest_resource_click">Request Resource</a></li>
+            <li><a href="http://localhost:8118/project/webapi/myresource/mcheck_approvals">Check Approvals</a></li>
+            <li><a href="http://localhost:8118/project/webapi/myresource/mremove_own_resource_click">Remove Resource</a></li>
+            <li><a href="http://localhost:8118/project/">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="title">Welcome to the Manager Dashboard</div>
+        <div class="content">
+            <!-- Your main content goes here -->
+        </div>
+    </div>
+</body>
+</html>
